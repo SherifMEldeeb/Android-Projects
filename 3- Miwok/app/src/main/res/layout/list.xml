@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_height"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="#fff7DA"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_toRightOf="@id/image"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/Miword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="miwok" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/container"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/capture"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/Enword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:text="english" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
